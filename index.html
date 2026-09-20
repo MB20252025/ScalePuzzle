@@ -526,9 +526,9 @@
     };
 
     const DIALS = [
-        { x: 22, y: 75, size: 11, value: 0 },   // ⭐ star
-        { x: 50, y: 68, size: 14, value: 0 },   // 🔺 triangle
-        { x: 78, y: 75, size: 11, value: 0 }    // ⚫ circle
+        { x: 22, y: 75.5, size: 10, value: 0 },   // ⭐ star
+        { x: 50, y: 68, size: 13, value: 0 },   // 🔺 triangle
+        { x: 78, y: 75.5, size: 10, value: 0 }    // ⚫ circle
     ];
 
     const SECRET = { star: 2, triangle: 4, circle: 6 };
@@ -656,7 +656,7 @@
         /* ▼▼▼ FIXED SECTION HEIGHT — no longer follows colTop ▼▼▼
            Buffer of 180px = how far colTop can go before the
            column base gets clipped by overflow:hidden. */
-        const sectionH = h + 125;
+        const sectionH = h + 115;
         scaleSection.style.height = sectionH + 'px';
 
         CONFIG.containerWidth  = stageW;
